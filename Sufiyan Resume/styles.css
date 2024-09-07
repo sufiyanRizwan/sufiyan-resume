@@ -1,0 +1,114 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, lightgreen, beige);
+    margin: 0;
+    padding: 20px;
+    color:black;
+}
+
+/* Resume Container */
+.resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.resume:hover {
+    transform: scale(1.02);
+}
+
+/* Header and Section Titles */
+h1, h2 {
+    text-align: center;
+    color:green;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(255, 99, 132, 0.1);
+    border-left: 5px solid green;
+    border-radius: 10px;
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Personal Info */
+#personal-info p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Skills List */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: green;
+    color:lightgreen;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    transition: background 0.3s ease;
+}
+
+#skills li:hover {
+    background-color:lightseagreen;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: linear-gradient(to right, green , lightgreen);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, lightgreen , green);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
